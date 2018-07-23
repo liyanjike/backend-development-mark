@@ -1,0 +1,26 @@
+cron服务器密钥ssh ronxin.zhu@10.21.210.23
+crontab命令：ubuntu下启动、停止与重启cron
+	     $sudo /etc/init.d/cron start
+	     $sudo /etc/init.d/cron stop
+	     $sudo /etc/init.d/cron restart
+date命令查看时间
+python + 文件名.py 在命令行中运行某个py文件，并会报错
+
+
+家弼在服务器上打开jupyter notebook debug步骤:
+
+python -m ipykernel install --user --name 环境名称 --display-name "Python (环境名称)"  
+                                           yanli                   contrab
+
+第一步是要求你的jupyter notebook能远程启动，需要一条fancy命令：
+	jupyter notebook --ip=0.0.0.0 --no-browser
+        ip 0.0.0.0是指定jupyter的运行    --no-browse
+接着会出来一条带token的句子
+你复制那个，粘贴到你的虚拟机浏览器里，并且把0.0.0.0改为目标服务器的ip地址,就能访问
+ http://0.0.0.0:8888/?token=0b3e5a9023726a05f8ac84780bbc0cc9c5a7e6f5a8f6b22e
+退出是ctrl + c 
+
+
+pip install 指定版本：要用 pip 安装指定版本的 Python 包，只需通过 == 操作符 指定
+				pip install robotframework==2.8.7
+
