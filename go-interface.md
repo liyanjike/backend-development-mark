@@ -1,0 +1,5 @@
+#go语言interface笔记
+##什么是interface
+interface是go语言中一组method的组合，interface定义对象的一组行为。interface让面向对象，内容组织实现更加方便。
+##interface与struct
+inerface与struct之间可以相互转换，struct不需要像JAVA在源码中显示说明实现了某个接口，可以通过约定的形式，隐式地转换到interface，还可以在运行时查询接口类型，这样有种动态语言写代码的感觉，但又可以在编译时进行检查，捕捉一些明显的类型不匹配的错误。
