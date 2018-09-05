@@ -1,7 +1,7 @@
 #web开发常见术语
 ##1.DNS：Domain Name System，域名系统<br>
 万维网上作为域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。工作原理如下（以谷歌www.google.com）<br>
-![avator](/Users/liyan/Desktop/3.1.dns_hierachy.png)
+![avator](/Users/liyan/Desktop/test/3.1.dns_hierachy.png)
 ##2.TCP：Transmission Control Protocol传输控制协议<br>
 是一种面向连接的、可靠的、基于字节流的传输层通信协议，由IETF的RFC 793定义。
 ##3.URL:Uniform Resource Locator，统一资源定位符<br>

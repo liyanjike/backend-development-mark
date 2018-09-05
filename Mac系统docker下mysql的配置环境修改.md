@@ -10,18 +10,18 @@ docker exec -it mysql(docker mysql name) /bin/bash
 ```
 ###2.打开docker容器内mysql配置文件
 cat /etc/mysql/my.cnf
-![avator](/Users/liyan/Desktop/WechatIMG2.jpeg)
+![avator](/Users/liyan/Desktop/test/WechatIMG2.jpeg)
 可以看到两行：<br>
 !includedir /etc/mysql/conf.d <br>
 !includedir /etc/mysql/mysql.conf.d <br>
 其中mysql.conf.d文件夹下的文件是我们要修改的mysql配置文件，但我们这里不修改它，是取其内容并改之，再在本地映射<br>
 cat /etc/mysql/mysql.conf.d/mysqld.cnf
-![avator](/Users/liyan/Desktop/WechatIMG3.jpeg)
+![avator](/Users/liyan/Desktop/test/WechatIMG3.jpeg)
 ###3.查看sql_mode
 此时的配置文件内是没有sql_mode的，可以在mysql中输入“select @@sql_mode”并执行，取去除掉“ONLY_FULL_GROUP_BY”的部分，并在刚才的mysqld.cnf中加一行"sql_mode = 一串去除““ONLY_FULL_GROUP_BY”"的部分，复制全文
 ###4.本地配置文件
 本地新建一个配置文件,我在本地/Users/liyan/mysql/conf目录下新建了一个名为mysqld.cnf的文件，vim打开后，粘贴刚才复制的内容<br>
-![avator](/Users/liyan/Desktop/WechatIMG4.jpeg)
+![avator](/Users/liyan/Desktop/test/WechatIMG4.jpeg)
 esc + :wq 退出保存
 ###5.重新在docker中拉去mysql5.7+版本的镜像
 ```
